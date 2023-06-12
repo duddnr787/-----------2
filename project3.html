@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="./project3.html" method="GET" style="display: flex; flex-direction: column; width: 50%;">
+                <div>
+                    <label for="name">사용자 이름 : </label>
+                    <input type="name" class="allText" name="name" required>
+                </div>
+        
+                <div>
+                    <label for="password">사용자 비밀번호 : </label>
+                    <input type="password" class="allText" name="password" required>
+                </div>
+        
+                <div>
+                    <label for="email">사용자 이메일 : </label>
+                    <input type="email" class="allText" name="email" required>
+                </div>
+        
+                <div>
+                    <label for="tel">사용자 전화번호 : </label>
+                    <input type="tel" class="allText" name="tel" required>
+                </div>
+        
+                <div>
+                    <label for="">자동로그인 : </label>
+                    <input type="checkbox" name="">
+                </div>
+                
+                <div>
+                    <input type="button" id="clearText" value="초기화">
+                    <input type="submit" value="로그인">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("clearText").addEventListener('click', () => {
+            document.querySelectorAll(".allText").forEach(item => {
+                item.value = "";
+            });
+        });
+    </script>
+</body>
+</html>
