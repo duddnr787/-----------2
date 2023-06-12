@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            margin: 50px auto;
+            width: 80%;
+            border: 1px solid #444444;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #444444;
+            text-align: center;
+        }
+        td div {
+            text-align: start;
+            margin: 10px;
+        }
+        td div p {
+            font-weight: bold;
+        }
+        .red{
+            color: red;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>홈페이지 HTML 태그 분석</h1>
+    <table>
+        <thead>
+            <colgroup>
+                <col width="400px">
+                <col width="300px">
+                <col width="300px">
+                <col width="550px">
+            </colgroup>
+            <th></th>
+            <th>웅진씽크빅</th>
+            <th>웅진IT</th>
+            <th>내용</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>시맨틱 태그 사용 여부</td>
+                <td>X</td>
+                <td>O</td>
+                <td>
+                    <div>
+                        <p>시맨틱 태그를 사용하지 않아 불편하게 느낀 점</p>
+                        <ul>
+                            <li>많은 div 태그 사용으로 인해 가독성이 떨어짐</li>
+                            <li>style을 적용해야 하기 때문에 class 이름이 난잡함</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="width: 80%; margin: auto;">
+        <h3>장점</h3>
+        <ol>
+            <li><span class="red">접근성 향상</span>: 스크린 리더와 같은 보조 기술을 사용하는 사람들은 시맨틱 태그를 통해 페이지의 구조와 콘텐츠를 이해하는 데 도움을 받을 수 있습니다.</li>
+            <li><span class="red">SEO 향상</span>: 시맨틱 태그는 검색 엔진이 웹 페이지의 콘텐츠를 이해하는 데 도움을 줍니다. 이는 검색 결과 순위를 높이는 데 기여할 수 있습니다.</li>
+            <li><span class="red">유지 관리 용이</span>: 시맨틱 태그는 코드의 가독성을 높여 웹 페이지의 유지보수를 용이하게 합니다.</li>
+        </ol>
+        <br>
+        <h3>단점</h3>
+        <ol>
+            <li><span class="red">접근성 저하:</span> 시맨틱 태그를 사용하지 않으면 보조 기술을 사용하는 사람들이 페이지의 콘텐츠를 제대로 이해하지 못할 수 있습니다.</li>
+            <li><span class="red">SEO 저하:</span> 검색 엔진은 페이지의 콘텐츠를 제대로 이해하지 못할 수 있어, 검색 결과 순위에 영향을 미칠 수 있습니다.</li>
+            <li><span class="red">유지 관리 어려움:</span>유지 관리 어려움: 시맨틱 태그를 사용하지 않으면 웹 페이지의 코드 가독성이 떨어지며, 이는 유지보수의 어려움으로 이어질 수 있습니다.</li>
+        </ol>
+    </div>
+</body>
+</html>
