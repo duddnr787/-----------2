@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/b2dcccecd2.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header img {
+      width: 5rem;
+    }
+
+    .header_wrap {
+      display: grid;
+      grid-template-columns: 1fr 7fr;
+      align-items: center;
+      padding: 30px 70px;
+    }
+
+    .nav_wrap {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+      grid-gap: 20px;
+    }
+
+    .nav_wrap li {
+      list-style: none;
+      text-align: center;
+    }
+
+    .nav_wrap a {
+      color: #000;
+      text-decoration-line: none;
+      font-weight: 700;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 210px;
+    }
+
+    .info div {
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+
+    .info a {
+      text-decoration-line: none;
+      color: #000;
+      font-weight: inherit;
+      font-size: .75rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      padding: 0 205px;
+    }
+    .spec {
+      width: 7%;
+      position: relative;
+      top:-180px;
+      left:270px;
+      color: rgb(147 51 234);
+      background-color: rgb(243 232 255);
+      font-size: .75rem;
+      padding: 3px 4px;
+      border-radius: 7px;
+      font-weight: 700;
+    }
+    .item {
+      width: 324px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid gainsboro;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px rgb(140, 140, 140);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .item img {
+      filter: brightness(70%);
+    }
+
+    .item img:hover {
+      filter: brightness(100%);
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+
+    .container article {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .submit {
+      background-color: rgb(220 252 231);
+      color: rgb(22 163 74);
+      letter-spacing: -.05em;
+      padding: 0 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h5 {
+      font-size: inherit;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: gray;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      margin-bottom: 20px;
+      font-size: .75rem;
+      line-height: 1rem;
+    }
+
+    .horseman {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .horseman div {
+      background-color: rgb(243 244 246);
+      color: rgb(107 114 128);
+      letter-spacing: -.05em;
+      padding: 1px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .horseman span {
+      font-size: .75rem;
+      line-height: 1rem;
+    }
+
+    .more {
+      background-color: rgb(144, 144, 242);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header_wrap">
+      <img src="./img/sfac.svg" alt="">
+      <ul class="nav_wrap">
+        <li><a href="#">스펙소개</a></li>
+        <li><a href="#">교육과정</a></li>
+        <li><a href="">공지사항</a></li>
+        <li><a href="">수료생 커뮤니티</a></li>
+        <li><a href="">협력사</a></li>
+        <li><a href="">스팩블로그</a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="info">
+      <div>교육 과정</div>
+      <a href="">과정 전체보기</a>
+    </div>
+    <div class="container">
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="교육 이미지"
+          width="324px" height="200px">
+          <span class="spec">스팩</span>
+        <article>
+          <div style="margin-bottom: 0.5rem">
+            <span class="submit">신청가능</span>
+          </div>
+          <h5>Flutter 모바일
+            어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다.
+            Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로 포트폴리오를 쌓아보세요.
+            최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!></p>
+          <div class="horseman">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <div class="more">
+            <i class="fa-sharp fa-regular fa-circle-play">더 알아보기</i>
+          </div>
+        </article>
+      </div>
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="교육 이미지"
+          width="324px" height="200px">
+          <span class="spec">스팩</span>
+        <article>
+          <div style="margin-bottom: 0.5rem">
+            <span class="submit">신청가능</span>
+          </div>
+          <h5>Flutter 모바일
+            어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다.
+            Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로 포트폴리오를 쌓아보세요.
+            최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!></p>
+          <div class="horseman">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <div class="more">
+            <i class="fa-sharp fa-regular fa-circle-play">더 알아보기</i>
+          </div>
+        </article>
+      </div>
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="교육 이미지"
+          width="324px" height="200px">
+          <span class="spec">스팩</span>
+        <article>
+          <div style="margin-bottom: 0.5rem">
+            <span class="submit">신청가능</span>
+          </div>
+          <h5>Flutter 모바일
+            어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다.
+            Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로 포트폴리오를 쌓아보세요.
+            최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!></p>
+          <div class="horseman">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <div class="more">
+            <i class="fa-sharp fa-regular fa-circle-play">더 알아보기</i>
+          </div>
+        </article>
+      </div>
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="교육 이미지"
+          width="324px" height="200px">
+          <span class="spec">스팩</span>
+        <article>
+          <div style="margin-bottom: 0.5rem">
+            <span class="submit">신청가능</span>
+          </div>
+          <h5>Flutter 모바일
+            어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다.
+            Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로 포트폴리오를 쌓아보세요.
+            최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!></p>
+          <div class="horseman">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <div class="more">
+            <i class="fa-sharp fa-regular fa-circle-play">더 알아보기</i>
+          </div>
+        </article>
+      </div>
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="교육 이미지"
+          width="324px" height="200px">
+          <span class="spec">스팩</span>
+        <article>
+          <div style="margin-bottom: 0.5rem">
+            <span class="submit">신청가능</span>
+          </div>
+          <h5>Flutter 모바일
+            어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다.
+            Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로 포트폴리오를 쌓아보세요.
+            최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!></p>
+          <div class="horseman">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <div class="more">
+            <i class="fa-sharp fa-regular fa-circle-play">더 알아보기</i>
+          </div>
+        </article>
+      </div>
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="교육 이미지"
+          width="324px" height="200px">
+          <span class="spec">스팩</span>
+        <article>
+          <div style="margin-bottom: 0.5rem">
+            <span class="submit">신청가능</span>
+          </div>
+          <h5>Flutter 모바일
+            어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다.
+            Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로 포트폴리오를 쌓아보세요.
+            최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!></p>
+          <div class="horseman">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <div class="more">
+            <i class="fa-sharp fa-regular fa-circle-play">더 알아보기</i>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

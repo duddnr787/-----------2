@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes spin {
+      0%{
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes toggle {
+      50% {
+        visibility: hidden;
+      }
+    }
+    .wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .circle{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: blue;
+      animation: spin 2s linear infinite;
+    }
+    .rec {
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+    .toggle {
+      animation: toggle 2s step-end infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="circle">
+      <div class="rec"></div>
+    </div>
+    <div class="toggle"> 안녕하세요.</div>
+  </div>
+</body>
+</html>
